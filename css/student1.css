@@ -29,14 +29,12 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
- image{
+ main img{
     width: 24%;
+    box-sizing: border-box;
     padding: 15px;
     margin: 0px;
-    border: #00FFFF;
-    border-style: groove;
-    border-width: 10px;
-    box-sizing: border-box;
+    border: #00FFFF groove 10px;
  }
 
  p{
@@ -45,3 +43,21 @@ body{
     background-color: beige;
     padding-top: 10%;
  }
+
+ div.gallery{
+   display: grid;
+   grid-template-columns: 250px 250px;
+
+   border: 5px solid black;
+   width: 90%;
+   justify-content: center;
+   
+ }
+
+ .gallery img{
+   width:80%;
+ }
+
+.gallery img:last-child{
+   grid-column: 1/span 2;
+}
